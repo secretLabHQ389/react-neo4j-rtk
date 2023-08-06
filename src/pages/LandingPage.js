@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import CircleType from 'circletype'
-//import CityLivin from '../images/CityLivin.png'
 import './pages.scss'
 
 //@ts-check

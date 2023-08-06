@@ -9,8 +9,6 @@ const FindRelatives = (props) => {
 
   const { session } = props
 
-  const currentFamilyMembers = useSelector(familyMembersSelector)
-
   const [query, setQuery] = useState('')
   const deferredQuery = useDeferredValue(query)
 
@@ -29,7 +27,13 @@ const FindRelatives = (props) => {
       <Button onClick={() => getListOfAllFamilyMembers()}>GET RELATIVES</Button>
       {console.log('allMembers in component: ', allMembers)}
       <>
-        {currentFamilyMembers && <p>{currentFamilyMembers}</p>}
+        {allMembers && allMembers.records.map(record => {
+          return (
+            <div className={'listed-members'}>
+              {record._fields[0].elementId}
+            </div>
+          )
+        })}
         <label>
           Location of Apartment:
           <input value={query} onChange={e => setQuery(e.target.value)} placeholder={'Find a Family Member by Name'} />
