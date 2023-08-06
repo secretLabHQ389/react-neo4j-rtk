@@ -1,0 +1,17 @@
+.nav__container {
+  padding-top: 20px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-align: center;
+  width: calc(100% - 1rem);
+  display: grid;
+  grid-gap: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(0, 3fr));
+  grid-template-rows: 1;
+  background-color: black;
+
+  div:hover {
+    background-color: pink;
+    text-align: center;
+  }
+}

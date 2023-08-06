@@ -1,0 +1,47 @@
+.hostel-hangout {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.landing-padding {
+    padding-top: 15%;
+}
+
+.landing-bkgd {
+    background-color: black;
+}
+
+.relative {
+    position: relative;
+}
+
+.welcome-notice {
+    position: absolute;
+    z-index: 100;
+    top: 5%;
+    font-size: 80px;
+    color: darkgreen;
+}
+
+.welcome-notice-slogan {
+    position: absolute;
+    z-index: 100;
+    top: 20%;
+    font-size: 40px;
+    color: gold;
+}
+
+.centered {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
